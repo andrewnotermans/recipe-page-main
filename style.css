@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+:root {
+    --background-body: #f3e5d7;
+    --background-intro: #fff7fb;
+    --main-title-li-color: #312e2c;
+    --intro-title-li-color: #7A284E;
+    --secondary-title-color: #854632;
+    --paragraph-color: #5f564D;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-body);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+article {
+    max-width: 736px;
+    margin: 128px 48px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    letter-spacing: 0px;
+    line-height: 100%;   
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--main-title-li-color);
+}
+h1 {
+    color: var(--main-title-li-color);
+    font-size: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 100%;
+}
+
+h2 {
+    color: var(--secondary-title-color);
+    font-size: 28px;
+    line-height: 100%;
+}
+
+h3, p, li, td {
+    font-family: "Outfit", sans-serif;
+    line-height: 150%;
+}
+
+
+h3 {
+    
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--intro-title-li-color);
+    margin-bottom: 16px;
+    
+
+}
+
+p, li {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+li .steps{
+    font-weight: 600;
+}
+
+li{
+    padding: 12px 0 12px 8px;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+   
+}
+
+
+.article-content ul li::marker {
+  color: var(--secondary-title-color);/* Directly change bullet or number color */
+  font-size: 0.8em; /* You can also scale it */
+}
+
+.article-content ol li::marker {
+    color: var(--secondary-title-color);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+
+.intro {
+    padding: 24px;
+    background-color: var(--background-intro);
+    border-radius: 12px;
+    margin: 2rem 0;
+
+}
+
+.intro li { 
+    list-style-type: circle;
+    list-style: var(--intro-title-li-color);
+    font-size: 16px;
+    
+}
+
+.article-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.article-content h2:not(:first-child){
+    margin-top: 4rem;
+
+}
+
+.article-content h2:first-child {
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+td:last-child {
+    color: var(--secondary-title-color);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 425px) {
+    article {
+        margin: 0;
+        
+    }
+
+    h1 {
+        overflow-wrap: break-word;
+        
+    }
+}
+
+
+
+
+
